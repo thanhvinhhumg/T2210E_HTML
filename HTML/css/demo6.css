@@ -1,0 +1,20 @@
+/*.clss1, .clss2{*/
+/*    color: red;*/
+/*    font-size: 50px;*/
+/*}*/
+/*#id1{*/
+/*    color: blue;*/
+/*}*/
+p{
+    color: blueviolet ;
+}
+/*p:hover{*/
+/*    color: black;*/
+/*    !*font-size: 50px;*!*/
+/*}*/
+p:first-letter{
+    color: #485b70 !important;
+}
+p:first-line{
+    color: black;
+}

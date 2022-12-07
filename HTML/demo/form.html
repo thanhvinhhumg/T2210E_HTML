@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<form action="#">
+  <label for="nameId">Name</label><br/>
+  <input type="text" oninvalid="this.setCustomValidity('FPTAptech')" required name="name" id="nameId" maxlength="10">
+  <br/>
+  <input type="radio" name="age" id="ageId">
+  <label>15-35</label>
+  <input type="radio" name="age" id="ageId1">
+  <label>35-55</label>
+  <input type="radio" name="age" id="ageId2">
+  <label>55-75</label><br/>
+  <input type="checkbox" name="product1" >
+  <label>IPhone</label>
+  <input type="checkbox" name="product2" >
+  <label>Samsung</label>
+  <input type="checkbox" name="product2" >
+  <label>Nokia</label><br/>
+  <textarea cols="25" rows="3" placeholder="description"></textarea> <br/>
+  <input type="datetime-local">
+  <input type="week">
+  <input type="file" multiple>
+  <input type="submit" value="submit">
+</form>
+</body>
+</html>

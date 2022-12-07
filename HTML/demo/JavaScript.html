@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+  <script >
+  function onKeyup(){
+    var name = document.getElementById("nameId").value;
+    console.log("name "+name);
+  }
+  function mouse(){
+    document.getElementById("nameId").value = "T2210E";
+    document.getElementById("nameId").style.color = "blue";
+  }
+  function Blur(){
+    document.getElementById("nameId").value = "T2210E";
+    document.getElementById("nameId").style.color = "red";
+    console.log("test blur function");
+  }
+  </script>
+</head>
+<body>
+<input type="text" id="nameId" onblur="Blur()" onmouseover="mouse()" name="name">
+</body>
+</html>

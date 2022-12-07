@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+  <script>
+    document.write("<p> JavaScript : ");
+    document.writeln("is a scripting");
+    document.write("and case-sensitive \nlanguage");
+    document.write("You need to have a \"credit card\u0022, if  you want to shop on the \’Internet\’.");
+    var text = "hello \\world";
+    console.log(text);
+    // alert("hello t2210E");
+    // confirm("Ban co muon hoc lai khong?");
+    // var name = prompt("Input your name");
+    // console.log("name :"+name);
+    function keyboardFunction(){
+        var text = document.getElementById("nameId");
+        text.value = text.value.toUpperCase();
+    }
+    function mouseFunction(){
+        var text = document.getElementById("nameId");
+        text.value = "Hello world";
+    }
+    var x = 30;
+    x=++x;
+    console.log("x :"+x);
+    y = x+ 1;
+    console.log("y :"+y);
+  </script>
+</head>
+<body>
+<input type="text" id="nameId" name="name" onmousedown="mouseFunction()">
+</body>
+</html>

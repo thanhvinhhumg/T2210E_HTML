@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .thumbnail:hover{
+            border: solid blue 2px;
+        }
+        .transition{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: red;
+            animation: example 4s ease 0s;
+            position: relative;
+        }
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+        a:link {
+            color: #FF0000;
+        }
+
+        /* visited link */
+        a:visited {
+            color: #00FF00;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: #FF00FF;
+        }
+
+        /* selected link */
+        a:active {
+            color: #0000FF;
+        }
+        a{
+            text-decoration: none;
+        }
+        p:first-line{
+            color: red;
+        }
+        p:first-letter{
+            color: blue;
+        }
+        p:first-child{
+            color: #FF00FF;
+        }
+        li:before{
+            content: "this is before ";
+        }
+        li:after{
+            content: " this is after";
+        }
+    </style>
+</head>
+<body>
+<p style="text-align: justify ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+<p style="text-decoration: blink">text decorator</p>
+<p style="text-indent: 50px; padding: 16px; border-bottom-style: solid">Text indent</p>
+<p style="text-transform: capitalize">Text transform</p>
+<p style="word-spacing: 100px; font-variant: all-small-caps">word spacing</p>
+<figure style="display: flex">
+    <img width="300px" src="../../image/anh1.jpg">
+    <figcaption>ảnh test</figcaption>
+</figure>
+
+<!--Thumbnail-->
+<a  href="../../image/anh1.jpg" target="_blank">
+    <img class="thumbnail" src="../../image/anh1.jpg">
+</a>
+<div class="transition"></div>
+<meter value="0.2">meter</meter>
+<progress value="2" max="10">progress</progress>
+<a href="demo3.html">demo4</a>
+<ul>
+    <li>Trang chủ</li>
+    <li>Tin tức</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.header{
+    background-color: #6e6ed0;
+    padding: 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+
+}
+.img{
+    width: 50px;
+    height: 50px;
+}
+.logo{
+    width: 30%;
+}
+.menu{
+    width: 70%;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+
+}

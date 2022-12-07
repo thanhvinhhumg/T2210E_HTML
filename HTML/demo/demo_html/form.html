@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<label for="nameId">Ten nhan vien</label><br/>
+<input type="text" name="name" id="nameId">
+<br/>
+<input type="radio" name="age" value="1-5">
+<label>1-5</label>
+<input type="radio" name="age" value="5-10">
+<label>5-10</label>
+<input type="radio" name="age" value="10-90">
+<label>10-90</label>
+<br/>
+<input type="checkbox" name="checkbox1" value="1-5">
+<label >1-5</label>
+<input type="checkbox" name="checkbox2" value="5-15">
+<label >1-5</label>
+<input type="checkbox" name="checkbox3" value="15-25">
+<label >1-5</label><br/>
+<textarea cols="40" rows="5"></textarea>
+
+<form method=”get” action="#">
+  <label>Email</label><br/>
+  <input type="text"  maxlength="10" oninvalid="this.setCustomValidity('Không để trống dòng này')"  required="required">
+  <input type="submit"  value="submit">
+</form>
+
+</body>
+</html>
