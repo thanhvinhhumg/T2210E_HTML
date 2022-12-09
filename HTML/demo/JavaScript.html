@@ -17,9 +17,31 @@
     document.getElementById("nameId").style.color = "red";
     console.log("test blur function");
   }
+  function printA(){
+      document.write("print A <br/>");
+      return "print A";
+  }
+  function printB(){
+      document.write("print B <br/>");
+      return "Success";
+  }
+  var x = (printA(),printB());
+  document.write(x);
+  document.write("<br/>")
+  var number = "6";
+  var check = number == 6 ? 6 : 0;
+  document.write("check :"+check+"<br/>");
+  document.write("typeof number :"+typeof(number)+"<br/>");
+  var reg = /^\d+$/;
+  var checkNumber = prompt("Nhap vao day so bat ky");
+  var a = reg.test(checkNumber) ? "Day la so :"+checkNumber : "Day khong phai la so :"+checkNumber;
+  document.write("test Reg :"+a);
+
+
+
   </script>
 </head>
 <body>
-<input type="text" id="nameId" onblur="Blur()" onmouseover="mouse()" name="name">
+<!--<input type="text" id="nameId" onblur="Blur()" onmouseover="mouse()" name="name">-->
 </body>
 </html>
